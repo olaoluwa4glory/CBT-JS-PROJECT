@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CBT EXAM</title>
+    <!-- Links -->
     <link rel="stylesheet" href="cbtExam.css">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <!-- <link
@@ -23,9 +24,12 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrapicons@1.8.1/font/bootstrap-icons.css"
   /> -->
+    <!-- Links End -->
+
 </head>
 
 <body>
+    <!-- Navbar start-->
     <nav class="navbar navbar-expand-lg navbar-light navbar fixed-top" id="nav">
         <div class="container-fluid">
             <p class="text">Designed and Created by <a href="https://mobile.twitter.com/olaoluwa4glory"
@@ -40,7 +44,6 @@
                 <a class="nav-link active" aria-current="page" href="#" id="timeLeft"><span id="timeLeft"></span></a/p>
                     <!-- <p id="timeLeft"></p> -->
 
-            <!-- Navbar start-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,7 +54,8 @@
                 <ul class="navbar-nav mb-2 mb-lg-0 offset-md-4">
 
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="../CALCULATOR/calculator.html">Calculator</a>
+                        <a class="nav-link active text-light" aria-current="page"
+                            href="../CALCULATOR/calculator.html">Calculator</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-light" aria-current="page" href="#">WorkSheet</a>
@@ -68,81 +72,55 @@
             </div>
         </div>
     </nav>
+    <!-- Navbar End-->
 
-
-
-
-
-    <!-- <nav class="navbar navbar-expand-sm" id="nav">
-        <a class="navbar-brand" href="#">
-            <p class="text">Designed and Created by <a href="https://mobile.twitter.com/olaoluwa4glory"><strong>@Olaoluwa4glory</strong></a></p>
-        </a> -->
-    <!-- Links -->
-    <!-- <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-            </li>
-        </ul>
-    </nav> -->
 
     <div class="container">
-
-            <div class="logo1">
+        <!-- Logo -->
+        <div class="logo1">
             <img src="../IMAGES/futa4.png" alt="" class="logo2">
-            </div>
+        </div>
+        <!-- TimeUp Container -->
+        <div id="timeUp">
+            <h1 class="timeover">TIME UP!. QUIZ IS OVER</h1>
+        </div>
+        <!--Score Container  -->
+        <div id="scoreContainer">
 
-            <div id="timeUp">
-                <h1 class="timeover">TIME UP!. QUIZ IS OVER</h1>
-            </div>
-           
-            <div id="scoreContainer">
+        </div>
 
-            </div>
-        
-
-            <!-- <h3>Question Type: Fluid Mechanics</h3>
+        <!-- <h3>Question Type: Fluid Mechanics</h3>
             <p> Instructions: </p> -->
-            <div class="container">
-                <h1 id="myScore" style="text-align: center;"></h1>
-                <div id="examContainer">
+        <div class="container">
+            <h1 id="myScore" style="text-align: center;"></h1>
 
-                </div>
+            <!-- Exam Container -->
+            <div id="examContainer">
 
-                <div id="optionContainer">
+            </div>
+            <!-- Option Container -->
+            <div id="optionContainer">
 
-                </div>
-
-                <!-- <div id="timeUp">
-                    <h1>TIME UP!. QUIZ IS OVER</h1>
-                </div> -->
-
-                <div id="buttonContainer" class="net">
-                    <button type="submit" id="back" class=" btn btn-dark text-light">PREVIOUS</button>
-                    <button type="submit" id="next" class="btn btn-danger text-light">FORWARD</button>
-                    <button type="submit" id="submitBtn" class=" btn btn-danger text-light">SUBMIT</button>
-
-                </div>
-
-                <!-- <div id="scoreContainer">
-
-                </div> -->
-
-                <div id="lastInstruction">
-                    <h1> <strong> NOTE:</strong> THIS IS THE LAST QUESTION, IF YOU OKAY WITH YOUR ANSWERS <br> CLICK THE
-                        SUBMIT BUTTON, IF NOT GO TO
-                        PREVIOUS.</h1>
-                </div>
-
-                <!-- <h3 id="timeUp"> YOUR TIME IS UP, GOODLUCK!</h3> -->
             </div>
 
-            <script src="cbtExam.js"></script>
+            <!-- Buttons Container  -->
+            <div id="buttonContainer" class="net">
+                <button type="submit" id="back" class=" btn btn-dark text-light">PREVIOUS</button>
+                <button type="submit" id="next" class="btn btn-danger text-light">FORWARD</button>
+                <button type="submit" id="submitBtn" class=" btn btn-danger text-light">SUBMIT</button>
+
+            </div>
+
+            <!-- Last Instruction Container -->
+            <div id="lastInstruction">
+                <h1> <strong> NOTE:</strong> THIS IS THE LAST QUESTION, IF YOU OKAY WITH YOUR ANSWERS <br> CLICK THE
+                    SUBMIT BUTTON, IF NOT GO TO
+                    PREVIOUS.</h1>
+            </div>
+
+        </div>
+
+        <script src="cbtExam.js"></script>
 </body>
 
 </html>

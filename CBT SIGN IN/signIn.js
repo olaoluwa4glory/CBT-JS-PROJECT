@@ -26,8 +26,8 @@ loginBtn.addEventListener('click', validationForm)
 
 // creating a function for form validation
 function validationForm(e) {
-// Process of preventing default submit action
-e.preventDefault();
+    // Process of preventing default submit action
+    e.preventDefault();
 
 
     // creating an array of errormessages
@@ -63,16 +63,12 @@ e.preventDefault();
     } else {
         window.location = 'file:///C:/Users/HyelNet/Desktop/webclass/JSProject/CBT/cbtExam.html'
     }
-
-
-
 }
 
-// creating a function for email validation
+// creating a function for Email validation
 function ValidateEmail(emailRe) {
 
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    // /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     if (emailRe.value.match(validRegex)) {
 
         // alert("Valid email address!");
@@ -90,5 +86,4 @@ function ValidateEmail(emailRe) {
         return false;
 
     }
-
 }

@@ -131,9 +131,6 @@ function loadExam() {
        d)  ${exam.d} &nbsp;&nbsp; <input type = 'radio' name = 'option' value = '${exam.d}'/><br/><br/>
     `
     
-
-
-
     optionContainer.innerHTML = options
 }
 loadExam()
@@ -169,10 +166,10 @@ function validateNext() {
         if (myExam === examQuestions.length - 2) {
             back.style.display = 'Block'
         }
-    // For correct score
-        if (radioCheck.value === examQuestions[myExam].correctAnswer){
+        // For correct score
+        if (radioCheck.value === examQuestions[myExam].correctAnswer) {
             score += 10
-            alert (`You score ${score}`)
+            alert(`You score ${score}`)
 
         }
 
@@ -204,14 +201,14 @@ function validateBack() {
 // Adding an event listener to the submit button
 submitBtn.addEventListener('click', submitFunction)
 
-function submitFunction(){
+function submitFunction() {
     examContainer.style.display = 'none'
     optionContainer.style.display = 'none'
     next.style.display = 'none'
     back.style.display = 'none'
-    submitbtn.style.display = 'none' 
-    lastInstruction.style.display = 'none' 
-    scoreContainer.textContent= `You score ${score} / ${examQuestions.length * 10}`
+    submitbtn.style.display = 'none'
+    lastInstruction.style.display = 'none'
+    scoreContainer.textContent = `You score ${score} / ${examQuestions.length * 10}`
     scoreContainer.style.fontSize = '40px'
     scoreContainer.style.paddingTop = '100px'
     scoreContainer.style.textAlign = 'center'
@@ -232,32 +229,32 @@ let sec = 0;
 let counter = 0;
 let timer = setInterval(myTimer, 1000)
 
-function myTimer(){
+function myTimer() {
     counter++;
-    min = Math.floor((totalTime - counter)/60)
+    min = Math.floor((totalTime - counter) / 60)
     sec = totalTime - min * 60 - counter
     // console.log(sec);
 
-    
-// const timerBox = document.getElementById('timerBox')
-const timeLeft = document.getElementById('timeLeft')
-timeLeft.textContent = min + " : " + sec  
-timeLeft.style.fontSize = '1.2rem'
-// timerBox.appendChild(timeLeft)
 
-if(counter === totalTime){
-   console.log(counter === totalTime);
-    clearInterval(timer)
-    timeUp.style.display = 'block'
-    examContainer.style.display = 'none'
-    optionContainer.style.display = 'none'
-    next.style.display = 'none'
-    back.style.display = 'none'
-    scoreContainer.textContent= `You score ${score} / ${examQuestions.length * 10}`
-    scoreContainer.style.fontSize = '40px'
-    scoreContainer.style.paddingTop = '100px'
-    scoreContainer.style.textAlign = 'center'
-    
-    // btn3.style.display = 'block'
-}
+    // const timerBox = document.getElementById('timerBox')
+    const timeLeft = document.getElementById('timeLeft')
+    timeLeft.textContent = min + " : " + sec
+    timeLeft.style.fontSize = '1.2rem'
+    // timerBox.appendChild(timeLeft)
+
+    if (counter === totalTime) {
+        console.log(counter === totalTime);
+        clearInterval(timer)
+        timeUp.style.display = 'block'
+        examContainer.style.display = 'none'
+        optionContainer.style.display = 'none'
+        next.style.display = 'none'
+        back.style.display = 'none'
+        scoreContainer.textContent = `You score ${score} / ${examQuestions.length * 10}`
+        scoreContainer.style.fontSize = '40px'
+        scoreContainer.style.paddingTop = '100px'
+        scoreContainer.style.textAlign = 'center'
+
+        // btn3.style.display = 'block'
+    }
 }

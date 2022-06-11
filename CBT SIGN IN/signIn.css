@@ -27,7 +27,7 @@
     animation: animate 5s infinite;
     padding: 30px;
     height: 400px;
-   
+
     /* margin-top: 5px; */
     padding-bottom: 40px;
     border: 5px purple;
@@ -66,8 +66,7 @@ h6 {
     /* margin-bottom: 10px; */
 }
 
-#ola{
+#ola {
     color: white;
-    text-decoration:none
+    text-decoration: none
 }
-
