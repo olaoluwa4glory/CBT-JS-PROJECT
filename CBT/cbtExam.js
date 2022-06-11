@@ -103,10 +103,12 @@ const optionContainer = document.getElementById('optionContainer')
 const next = document.getElementById('next')
 const back = document.getElementById('back')
 const submitbtn = document.getElementById('submitBtn')
+const title = document.getElementById('courseTitle')
 const lastInstruction = document.getElementById('lastInstruction')
 const myScore = document.getElementById('myScore')
 const timeUp = document.getElementById('timeUp')
 const scoreContainer = document.getElementById('scoreContainer')
+const print = document.getElementById('printBtn')
 
 
 // Initializing the variable myExam to zero
@@ -130,7 +132,7 @@ function loadExam() {
        c)  ${exam.c} &nbsp;&nbsp; <input type = 'radio' name = 'option' value = '${exam.c}'/> <br/><br/>
        d)  ${exam.d} &nbsp;&nbsp; <input type = 'radio' name = 'option' value = '${exam.d}'/><br/><br/>
     `
-    
+
     optionContainer.innerHTML = options
 }
 loadExam()
@@ -143,6 +145,9 @@ lastInstruction.style.display = 'none'
 
 // Hide the timeUp button
 timeUp.style.display = 'none'
+
+// Hide the print button
+printBtn.style.display = 'none'
 
 // Add an event listener to foward and backward button
 next.addEventListener('click', validateNext)
@@ -207,7 +212,9 @@ function submitFunction() {
     next.style.display = 'none'
     back.style.display = 'none'
     submitbtn.style.display = 'none'
+    courseTitle.style.display = 'none'
     lastInstruction.style.display = 'none'
+    printBtn.style.display = 'Block'
     scoreContainer.textContent = `You score ${score} / ${examQuestions.length * 10}`
     scoreContainer.style.fontSize = '40px'
     scoreContainer.style.paddingTop = '100px'
@@ -250,6 +257,8 @@ function myTimer() {
         optionContainer.style.display = 'none'
         next.style.display = 'none'
         back.style.display = 'none'
+        courseTitle.style.display = 'none'
+        printBtn.style.display = 'Block'
         scoreContainer.textContent = `You score ${score} / ${examQuestions.length * 10}`
         scoreContainer.style.fontSize = '40px'
         scoreContainer.style.paddingTop = '100px'

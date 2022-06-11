@@ -13,9 +13,10 @@
 
 #timeLeft {
     /* text-align: center; */
-    color: white;
+    color: black;
     font-weight: bolder;
-    padding-top: 14px;
+    /* padding-top: 14px; */
+    margin-top: 40px;
     list-style: none;
 }
 
@@ -44,6 +45,10 @@
 
 #nav {
     background-color: purple
+}
+
+#navbarDropdown {
+    color: #fff;
 }
 
 .text {
