@@ -20,6 +20,10 @@
     padding-top: 14px;
     list-style: none;
 }
+
+.timeover{
+    text-align: center;
+}
 .logo1{
     text-align: center;
     width: 100%;

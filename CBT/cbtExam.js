@@ -226,7 +226,7 @@ function submitFunction(){
 
 // Timer functionality
 
-let totalTime = 20;
+let totalTime = 60;
 let min = 0;
 let sec = 0;
 let counter = 0;
@@ -249,14 +249,15 @@ if(counter === totalTime){
    console.log(counter === totalTime);
     clearInterval(timer)
     timeUp.style.display = 'block'
-    questionContainer.style.display = 'none'
-    optionsContainer.style.display = 'none'
-    // btn2.style.display = 'none'
-    // btn.style.display = 'none'
+    examContainer.style.display = 'none'
+    optionContainer.style.display = 'none'
+    next.style.display = 'none'
+    back.style.display = 'none'
     scoreContainer.textContent= `You score ${score} / ${examQuestions.length * 10}`
     scoreContainer.style.fontSize = '40px'
     scoreContainer.style.paddingTop = '100px'
     scoreContainer.style.textAlign = 'center'
+    
     // btn3.style.display = 'block'
 }
 }
