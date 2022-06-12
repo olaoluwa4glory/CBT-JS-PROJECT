@@ -9,20 +9,6 @@ const checkbox = document.getElementById('exampleCheck1')
 // Adding an Event listener for the login button
 loginBtn.addEventListener('click', validationForm)
 
-// checkbox.addEventListener('click', validateNext)
-
-// // Creating a function for validation
-// function validateNext() {
-//     let checkbox = document.querySelector('input[type= checkbox]:checked')
-
-//     if (!checkbox) {
-//         alert('please check the box')
-
-//     }
-// }
-// validateNext();
-
-
 
 // creating a function for form validation
 function validationForm(e) {
@@ -49,17 +35,16 @@ function validationForm(e) {
         errorMessage.innerText = message.join(',')
     }
 
-
-    // if (message.length > 0) {
-    //     errorMessage.innerText = message.join(',')
+    // if (checkbox.checked === true) {
+    //     alert('Welcome home')
     // }
 
-    if (checkbox.checked === true) {
-        alert('Welcome home')
-    }
     if (checkbox.checked === false) {
         alert('Please tick the checkbox')
         // window.location = 'C:\Users\HyelNet\Desktop\webclass\JSProject\CBT SIGN IN\signIn.html'
+    }
+    if (passwordReq.value.length < 8) {
+        alert('Please correct your password')
     } else {
         window.location = 'file:///C:/Users/HyelNet/Desktop/webclass/JSProject/CBT/cbtExam.html'
     }
@@ -68,7 +53,7 @@ function validationForm(e) {
 // creating a function for Email validation
 function ValidateEmail(emailRe) {
 
-    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (emailRe.value.match(validRegex)) {
 
         // alert("Valid email address!");
@@ -81,7 +66,7 @@ function ValidateEmail(emailRe) {
 
         alert("Invalid email address!");
 
-        //   emailRe.focus();
+          emailRe.focus();
 
         return false;
 
